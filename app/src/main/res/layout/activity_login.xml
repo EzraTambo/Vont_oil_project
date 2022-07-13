@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="320dp"
+            android:src="@drawable/vont" />
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="52dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="true"
+            android:letterSpacing="0.03"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordEditTextLogin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_edittext_register_login"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditTextLogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/emailEditTextLogin"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditTextLogin" />
+
+    <TextView
+        android:id="@+id/backToRegisterTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Back to registration"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/merriweather_black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/loginButtonLogin"
+        app:layout_constraintStart_toStartOf="@+id/loginButtonLogin"
+        app:layout_constraintTop_toBottomOf="@+id/loginButtonLogin" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailEditTextLogin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_edittext_register_login"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButtonLogin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEditTextLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditTextLogin"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
